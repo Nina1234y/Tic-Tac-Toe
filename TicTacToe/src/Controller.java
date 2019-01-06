@@ -83,6 +83,9 @@ public class Controller implements ActionListener{
 				winner = true;
 				block.setLabel(Util.PLAYER);
 			}
+			else {
+				block.setLabel("Nobody");
+			}
 		}
 		}
 	}
