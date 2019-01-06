@@ -56,10 +56,8 @@ public class Controller implements ActionListener{
 		player = (JButton) e.getSource();
 		model.setPlayer(player);
 		Boolean ok = false;
-		// winner = false;
 		
 		if (Model.roundsPlayed < 8 && !winner) {
-			System.out.println(Model.roundsPlayed);
 			while (!ok){
 				ok = model.playerMove(block, player);
 			}
