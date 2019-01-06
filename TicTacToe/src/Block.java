@@ -18,7 +18,7 @@ public class Block extends JFrame{
 	JButton reset;
 	JLabel label;
 	final static private int HEIGHT = 500;
-	final static private int WiDTH = 400;
+	final static private int WIDTH = 400;
 	
 	/***/
 	public Block (ActionListener listener) {
@@ -26,8 +26,8 @@ public class Block extends JFrame{
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		createButtons(listener);
 		createLabel();
-		this.setMinimumSize(new Dimension(Block.WiDTH, Block.HEIGHT));
-		this.setMaximumSize(new Dimension(Block.WiDTH, Block.HEIGHT));
+		this.setMinimumSize(new Dimension(Block.WIDTH, Block.HEIGHT));
+		this.setMaximumSize(new Dimension(Block.WIDTH, Block.HEIGHT));
         this.setLayout(new GridLayout(5, 1, 1, 1));
 	}
 	
